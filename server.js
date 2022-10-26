@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const helmet = require("helmet");
 
-server.set("port", process.env.PORT || 5555);
+server.set("port", process.env.PORT || 3000);
 
 server.set("view engine", "ejs");
 server.use(bodyParser.json());

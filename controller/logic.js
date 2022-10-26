@@ -1,5 +1,5 @@
 const { Plugin } = require("../controller/plugin");
-const axios = require("axios");
+
 class Logic {
   //create student
   createStudentLogic = (student, res) => {

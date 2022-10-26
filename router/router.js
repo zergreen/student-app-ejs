@@ -47,9 +47,10 @@ router.get("/getStudentById/:id", new Endpoint().getStudentByIdEndpoint);
 
 router.get("/", (req, res) => {
   // console.log(__dirname);
-  res.render("pages/homepage", {
-    title: "Home",
-  });
+  // res.render("pages/homepage", {
+  //   title: "Home",
+  // });
+  return res.status(201).send({ response: "hello world from serever" });
 });
 
 router.get("/table", function (req, res) {
